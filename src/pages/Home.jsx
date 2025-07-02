@@ -1,16 +1,36 @@
-import rigoImageUrl from "../assets/img/rigo-baby.jpg";
-import useGlobalReducer from "../hooks/useGlobalReducer.jsx";
+import React, { useContext } from "react";
+import { Context } from "../store.jsx";
+import CharacterCard from "../components/CharacterCard.jsx";
+import PlanetCard from "../components/PlanetCard.jsx";
+import VehicleCard from "../components/VehicleCard.jsx";
 
-export const Home = () => {
+const Home = () => {
+  const { store } = useContext(Context);
 
-  const {store, dispatch} =useGlobalReducer()
+  return (
+    <div className="container">
+      <h2>Characters</h2>
+      <div className="row">
+        {store.characters.map((item) => (
+          <CharacterCard key={item.uid} item={item} />
+        ))}
+      </div>
 
-	return (
-		<div className="text-center mt-5">
-			<h1>Hello Rigo!!</h1>
-			<p>
-				<img src={rigoImageUrl} />
-			</p>
-		</div>
-	);
-}; 
+      <h2 className="mt-4">Planets</h2>
+      <div className="row">
+        {store.planets.map((item) => (
+          <PlanetCard key={item.uid} item={item} />
+        ))}
+      </div>
+
+      <h2 className="mt-4">Vehicles</h2>
+      <div className="row">
+        {store.vehicles.map((item) => (
+          <VehicleCard key={item.uid} item={item} />
+        ))}
+      </div>
+    </div>
+  );
+};
+
+export default Home;

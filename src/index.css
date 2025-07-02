@@ -1,0 +1,206 @@
+.card {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.2s ease-in-out;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  background-color: white;
+}
+
+.card:hover {
+  transform: scale(1.02);
+}
+
+.card-img-top {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.card-body {
+  padding: 1rem;
+  background-color: #fff;
+}
+
+.card-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.card-text {
+  font-size: 0.95rem;
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+
+.btn-primary {
+  background-color: #007bff;
+  border: none;
+  padding: 0.4rem 0.75rem;
+  font-size: 0.9rem;
+}
+
+.btn-outline-warning {
+  border: 2px solid #ffc107;
+  color: #ffc107;
+  background-color: transparent;
+  padding: 0.4rem 0.6rem;
+  font-size: 0.9rem;
+  border-radius: 5px;
+}
+
+.btn-outline-warning:hover {
+  background-color: #ffc107;
+  color: white;
+}
+
+
+
+.character-detail-page {
+  min-height: 100vh;
+  padding: 60px 20px;
+  font-family: 'Arial Black', sans-serif;
+}
+
+.character-top {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  align-items: center;
+  justify-content: center;
+}
+
+.character-image {
+  width: 300px;
+}
+
+.character-view {
+  max-width: 500px;
+}
+
+.character-view h1 {
+  font-size: 2.5rem;
+
+}
+
+.character-view p {
+  font-size: 1rem;
+
+}
+
+.character-attributes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  text-align: center;
+  gap: 30px;
+}
+
+
+.planet-detail-page {
+  min-height: 100vh;
+  padding: 60px 20px;
+  font-family: 'Arial Black', sans-serif;
+}
+
+.planet-top {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  align-items: center;
+  justify-content: center;
+}
+
+.planet-image {
+  width: 300px;
+}
+
+.planet-view {
+  max-width: 500px;
+}
+
+.planet-view h1 {
+  font-size: 2.5rem;
+
+}
+
+.planet-view p {
+  font-size: 1rem;
+
+}
+
+.planet-attributes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  text-align: center;
+  gap: 30px;
+}
+
+
+.vehicle-detail-page {
+  min-height: 100vh;
+  padding: 60px 20px;
+  font-family: 'Arial Black', sans-serif;
+}
+
+.vehicle-top {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  align-items: center;
+  justify-content: center;
+}
+
+.vehicle-image {
+  width: 300px;
+}
+
+.vehicle-view {
+  max-width: 500px;
+}
+
+.vehicle-view h1 {
+  font-size: 2.5rem;
+
+}
+
+.vehicle-view p {
+  font-size: 1rem;
+
+}
+
+.vehicle-attributes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  text-align: center;
+  gap: 30px;
+}
+
+.red-divider {
+  border: none;
+  border-top: 3px solid red;
+  margin: 40px auto 20px;
+  width: 100%;
+}
+
+.attribute {
+  flex: 1 1 150px;
+}
+
+.label {
+  display: block;
+  font-size: 1rem;
+  margin-bottom: 5px;
+}
+
+.value {
+  font-size: 1.2rem;
+}
+
+.loading-text {
+  text-align: center;
+  color: white;
+  font-size: 1.5rem;
+}
