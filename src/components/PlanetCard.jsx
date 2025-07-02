@@ -35,7 +35,7 @@ const PlanetCard = ({ item }) => {
           <p><strong>Population:</strong> {details.population}</p>
           <p><strong>Orbital Period:</strong> {details.orbital_period}</p>
           </> ) : (
-            <p>Loading...</p>
+            <p>Getting info from SWAPI...</p>
           )}
           <Link to={`/planets/${item.uid}`} className="btn btn-primary me-2">
             Learn More

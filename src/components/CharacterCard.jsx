@@ -36,7 +36,7 @@ const CharacterCard = ({ item }) => {
           <p className="card-text">Hair Color: {details.hair_color}</p>
           <p className="card-text">Eye-Color: {details.eye_color}</p>
           </> ) : (
-            <p>Loading...</p>
+            <p>Getting info from SWAPI...</p>
           )}
           <Link to={`/characters/${item.uid}`} className="btn btn-primary me-2">
             Learn More

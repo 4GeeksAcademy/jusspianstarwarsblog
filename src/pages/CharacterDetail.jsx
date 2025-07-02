@@ -60,7 +60,7 @@ const CharacterDetail = () => {
           </div>
         </>
       ) : (
-        <p>Loading...</p>
+        <p>Getting info from SWAPI...</p>
       )}
     </div>
   );

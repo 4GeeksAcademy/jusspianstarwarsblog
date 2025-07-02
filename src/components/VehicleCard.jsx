@@ -35,7 +35,7 @@ const VehicleCard = ({ item }) => {
           <p><strong>Full Name:</strong> {details.model}</p>
           <p><strong>Manufacturer:</strong> {details.manufacturer}</p>
           </> ) : (
-            <p>Loading...</p>
+            <p>Getting info from SWAPI...</p>
           )}
           <Link to={`/vehicles/${item.uid}`} className="btn btn-primary me-2">
             Learn More
